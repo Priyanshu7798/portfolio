@@ -26,7 +26,7 @@ const Contact = () => {
       await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
+        formRef.current, // contain info about the form
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
 
@@ -35,7 +35,7 @@ const Contact = () => {
     } catch (error) {
       console.error("EmailJS Error:", error); // Optional: show toast
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false); 
     }
   };
 
