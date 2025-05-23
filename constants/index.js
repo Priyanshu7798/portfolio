@@ -275,6 +275,7 @@ const socialImgs = [
   },
   {
     name: "fb",
+    url: "https://www.facebook.com/",
     imgPath: "/images/fb.png",
   },
   {
