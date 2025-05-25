@@ -10,11 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
   useGSAP(() => {
-    // Loop through each timeline card and animate them in
-    // as the user scrolls to each card
     gsap.utils.toArray(".timeline-card").forEach((card) => {
-      // Animate the card coming in from the left
-      // and fade in
       gsap.from(card, {
             // Move the card in from the left
         xPercent: -100,
@@ -38,7 +34,7 @@ const Experience = () => {
       scrollTrigger: {
         trigger: ".timeline",
         start: "top center",
-        end: "70% center",
+        end: "90% center",
         onUpdate: (self) => {
           gsap.to(".timeline", {
             scaleY: 1 - self.progress,

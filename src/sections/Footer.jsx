@@ -10,14 +10,15 @@ const Footer = () => {
         <div className="socials">
           {socialImgs.map((socialImg, index) => (
             <div key={index} className="icon">
-              <a href={socialImg.url} target="_blank" className="icon"></a>
-              <img src={socialImg.imgPath} alt="social icon" />
+              <a href={socialImg.url} target="_blank">
+                <img src={socialImg.imgPath} alt="social icon" className="w-6 h-6" />
+              </a>
             </div>
           ))}
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">
-            © {new Date().getFullYear()} Priyanshu Mrinal Jha.
+            © {new Date().getFullYear()} Priyanshu Mrinal Jha
           </p>
         </div>
       </div>

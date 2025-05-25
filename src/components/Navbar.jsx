@@ -24,7 +24,7 @@ const Navbar = () => {
         </a>
 
         {/* Button Links for Different pages */}
-        <nav className='desktop'>
+        <nav className='desktop font-sans'>
           <ul>
             {navLinks.map(({link,name})=>(
               <li key={name} className='group'>

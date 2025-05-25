@@ -47,8 +47,10 @@ const ShowcaseSection = () => {
         <div className='showcaselayout'>
           {/* left side */}
             <div className='first-project-wrapper' ref={project1Ref}>
-              <div className='image-wrapper'>
-                <img src='/images/project1.png' alt='Ryde' />
+              <div className='image-wrapper bg-[#08021d] rounded' >
+                <a href="https://muscleaiseven.vercel.app/" target='_blank'>
+                  <img src='/images/muscleAI.png' alt='muscleAi' className='object-contain w-full h-full' />
+                </a>
               </div>
               <div className='text-content'>
                 <h2>Expert-designed workout and diet plans, tailored just for you—accessible anytime at your fingertips.</h2>
@@ -59,15 +61,19 @@ const ShowcaseSection = () => {
           <div className='project-list-wrapper overflow-hidden'>
             <div className='project' ref={project2Ref}>
               <div className='image-wrapper bg-[#ffefdb]'>
-                <img src="/images/project2.png" alt="Library Management" />
+                <a href="https://socialtasksnap.vercel.app/sign-in" target='_blank'>
+                  <img src="/images/social.png" alt="Social Platform" />
+                </a>
               </div>
-              <h2> Library Managemnet </h2>
+              <h2> SnapGram -- Social </h2>
             </div>
             <div className='project' ref={project3Ref}>
               <div className='image-wrapper bg-[#ffe7eb]'>
-                <img src="/images/project3.png" alt="YC Directory" />
+                <a href="https://mockbotaiinterview.vercel.app/">
+                  <img src="/images/interviewPrep.png" alt="PrepWise" />
+                </a>
               </div>
-              <h2>YC Directory </h2>
+              <h2>Interview Preperation </h2>
             </div>
           </div>
         </div>

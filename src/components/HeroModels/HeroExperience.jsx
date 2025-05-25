@@ -31,7 +31,8 @@ const HeroExperience = () => {
       <group
         scale ={isMobile? 0.9:1}
         position={[0,-1,0]}
-        rotation={[0,-Math.PI /4,0]}
+        rotation={isMobile?[0,Math.PI /4,0]:[0,-Math.PI /4,0]}
+
       >
         <HackRoom />
       </group>
